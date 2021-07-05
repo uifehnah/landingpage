@@ -1,12 +1,19 @@
-.center {
-  position:absolute;
-  text-align: center;
-  width: 100%;
-  height: 50%;
+.centered {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.video { 
-  position: relattive;
+.name {
+  font-family: "Varela Round";
+  font-size: 750%;
+  color:#04AA6D;
+  /*background: linear-gradient(rgba(4, 170, 109, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;*/
+  
 }
 
 #myVideo {
@@ -17,15 +24,15 @@
   min-height: 100%;
 }
 
-/* The side navigation menu */
 .sidebar {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #f1f1f1;
+  background-color: #5e5e5e;
   position: fixed;
-  height: 22%;
+  height: 22.5%;
   overflow: fixed;
+  opacity: 0.6;
 }
 
 .sidebar a {
@@ -33,16 +40,19 @@
   color: black;
   padding: 16px;
   text-decoration: none;
+  font-family: "Varela Round";
 }
  
 .sidebar a.active {
   background-color: #04AA6D;
-  color: white;
+  color: rgb(0, 0, 0);
+  opacity: 0.6;
 }
 
 .sidebar a:hover:not(.active) {
   background-color: #555;
   color: white;
+  opacity: 0.6;
 }
 
 div.content {
