@@ -1,3 +1,5 @@
+/*Import nice looking fonts*/
+
 @font-face {
   font-family: "Varela Round";
   src: url(assets/VarelaRound-Regular.ttf);
@@ -8,15 +10,45 @@
   src: url(assets/Quicksand-VariableFont_wght.ttf);
 }
 
+/*Info box css*/
+.description {
+  border: 5px solid #f2f2f2;
+  left: 17%;
+  top: 48%;
+  position: absolute;
+  opacity: 0.6;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+.text {
+  width: 400px;
+  inline-size: 350px;
+  font-family: "Quicksand";
+}
+
+.description2 {
+  border: 5px solid #f2f2f2;
+  right: 15%;
+  bottom: 10%;
+  position: absolute;
+  opacity: 0.6;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
 .label {
   font-family: "Quicksand";
   color: #04AA6D;
 }
 
+/*Logo/robot name in the middle*/
 .centered {
   position: absolute; 
-  top: 50%;
-  left: 25%;
+  top: 38%;
+  left: 27%;
   transform: translate(-50%, -50%);
   overflow: auto;
 }
@@ -29,18 +61,8 @@
   overflow: auto;
 }
 
-.name {
-  font-family: "Varela Round";
-  font-size: 750%;
-  color:#04AA6D;
-  /*background: linear-gradient(rgba(4, 170, 109, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;*/
-  
-}
-
-#myVideo {
+/*Background video*/
+.video {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -49,20 +71,22 @@
 }
 
 
-/* Style inputs with type="text", select elements and textareas */
+
+
+/*request a demo form*/
 input[type=text], select, textarea {
   font-family: "Quicksand";
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical 
 }
 
-/* Style the submit button with a specific background color etc */
+
 input[type=submit] {
   font-family: "Quicksand";
   background-color: #04AA6D;
@@ -73,24 +97,24 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
-/* Add a background color and some padding around the form */
+
 .container {
-  left: 50%;
-  top: 20%;
+  left: 52%;
+  top: 14%;
   position: absolute;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-  width: 500px;
+  width: 400px;
 }
 
 
-
+/*navigation sidebar that doesnt work because javacsript is hard*/
 .sidebar {
   margin: 0;
   padding: 0;
