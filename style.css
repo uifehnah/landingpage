@@ -3,6 +3,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: auto;
+}
+
+.img {
+  display: block;
+  height: auto;
+  width: auto;
+  transform: scale(0.25);
+  overflow: auto;
 }
 
 .name {
@@ -28,16 +37,16 @@
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #5e5e5e;
+  background-color: #535353;
   position: fixed;
-  height: 22.5%;
+  height: auto;
   overflow: fixed;
   opacity: 0.6;
 }
 
 .sidebar a {
   display: block;
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 16px;
   text-decoration: none;
   font-family: "Varela Round";
@@ -50,8 +59,8 @@
 }
 
 .sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+  background-color: rgb(218, 218, 218);
+  color: black;
   opacity: 0.6;
 }
 
