@@ -10,8 +10,8 @@
   src: url(assets/Quicksand-VariableFont_wght.ttf);
 }
 
-/*Info box css*/
 .description {
+  display: block;
   border: 5px solid #f2f2f2;
   left: 17%;
   top: 48%;
@@ -22,13 +22,8 @@
   padding-bottom: 20px;
 }
 
-.text {
-  width: 400px;
-  inline-size: 350px;
-  font-family: "Quicksand";
-}
-
 .description2 {
+  display: block;
   border: 5px solid #f2f2f2;
   right: 15%;
   bottom: 10%;
@@ -39,12 +34,60 @@
   padding-bottom: 20px;
 }
 
+.centered {
+  position: absolute; 
+  top: 38%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+}
+
+/*Info box css*/
+@media only screen and (max-width: 600px) {
+  .description {
+    background-color: #04AA6D;
+    border: 5px solid #f2f2f2;
+    left: 17%;
+    top: 48%;
+    position: absolute;
+    opacity: 0.6;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+  }
+  
+  .description2 {
+    border: 5px solid #f2f2f2;
+    right: 15%;
+    bottom: 10%;
+    position: absolute;
+    opacity: 0.6;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+  }
+
+  .centered {
+    position: absolute; 
+    top: 38%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+  }
+}
+
+
+.text {
+  width: 400px;
+  inline-size: 350px;
+  font-family: "Quicksand";
+}
+
 .label {
   font-family: "Quicksand";
   color: #04AA6D;
 }
 
-/*Logo/robot name in the middle*/
 .centered {
   position: absolute; 
   top: 38%;
@@ -54,7 +97,6 @@
 }
 
 .img {
-  display: block;
   height: auto;
   width: auto;
   transform: scale(0.25);
